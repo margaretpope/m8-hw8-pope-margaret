@@ -40,11 +40,31 @@ header a {
   font-size: 1.5rem;
   color: var(--off-white);
 }
+
+header a:hover {
+  animation-name: rotate;
+  animation-duration: 1s;
+}
+
+@keyframes rotate {
+  25% {
+    transform: rotateZ(8deg);
+  }
+  75% {
+    transform: rotateZ(-8deg);
+  }
+}
 /* end header link animations */
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  transition: .3s linear;
+}
+
+main a:hover {
+  background-color: #FA5456;
+  color: white;
 }
 /* end article link transitions */
 
@@ -100,6 +120,12 @@ section.hero > button {
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: .3s linear;
+}
+
+button:hover {
+  color: white;
+  transform: scale(1.15, 1.15);
 }
 
 main article {
