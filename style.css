@@ -48,10 +48,10 @@ header a:hover {
 
 @keyframes rotate {
   25% {
-    transform: rotateZ(8deg);
+    transform: rotateZ(4deg);
   }
   75% {
-    transform: rotateZ(-8deg);
+    transform: rotateZ(-4deg);
   }
 }
 /* end header link animations */
